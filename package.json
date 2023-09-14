@@ -1,0 +1,14 @@
+{
+  "name": "jual-rumah",
+  "version": "1.0.0",
+  "description": "Website Jual Rumah",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i src/styles/style.css -o src/styles/output.css --watch"
+  },
+  "author": "Dwi Panca Mahardhika",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

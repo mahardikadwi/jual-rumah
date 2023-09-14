@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/ea044d41b3.js" crossorigin="anonymous"></script>
+    <title>JualRumah.id</title>
+</head>
+<body>
+    <!-- navbar section -->
+  <nav class="bg-slate-800 fixed w-full z-50">
+    <div class="max-w-screen-xl flex flex-wrap items-center mx-auto p-4">
+      <div class="site-logo mr-16">
+        <a href="index.html">
+          <span class="text-2xl text-white font-bold">JualRumah.id</span>
+        </a>
+      </div>
+      <div class="lg:flex gap-6 hidden relative">
+          <a href="#" class="megaLinks" data-menu="menu-1">
+            <span class="text-sm text-white font-medium">Dijual</span>
+          </a>
+          <div id="menu-1" class="megaMenu fixed hidden top-[70px] left-0 bg-white z-50 w-full h-[300px] shadow-lg overflow-hidden">
+            <div class="grid grid-cols-4 gap-4 p-4">
+              <div class="col-span-1 flex justify-center items-center">
+                <img src="/assets/images/nykka-alam-sutera.jpg" class="max-w-[300px] h-auto sticky top-0" alt="Mega Menu Image">
+              </div>
+              <div class="mega-list-dijual-container col-span-3 flex gap-8 justify-start flex-wrap overflow-y-auto max-h-[250px]">
+                <ul class="w-[20%] jakarta-listing text-sm ">
+                  <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">DKI Jakarta</li>
+                  </a>
+                  <a href="">
+                    <li>Rumah Dijual di Jakarta Pusat</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Jakarta Timur</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Jakarta Barat</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Jakarta Selatan</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Jakarta Utara</li>
+                  </a>
+                </ul>
+                <ul class="w-[20%] jawa-barat-listing text-sm">
+                  <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Jawa Barat</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Bandung</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Bekasi</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Bogor</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Depok</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Cimahi</li>
+                  </a>
+                </ul>
+                <ul class="w-[20%] banten-listing text-sm">
+                  <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Banten</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Tangerang</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Tangerang Selatan</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Serang</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Cilegon</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Lebak</li>
+                  </a>
+                </ul>
+                <ul class="w-1/4 jawa-timur-listing text-sm">
+                  <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Jawa Timur</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Surabaya</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Malang</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Sidoarjo</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Gresik</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Kediri</li>
+                  </a>
+                </ul>
+                <ul class="w-[20%] jateng-listing text-sm">
+                  <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Jawa Tengah</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Semarang</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Solo</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Sukuharjo</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Karanganyar</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Surakarta</li>
+                  </a>
+                </ul>
+                <ul class="w-[20%] bali-listing text-sm">
+                  <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Bali</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Badung</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Kuta</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Denpasar</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Gianyar</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Buleleng</li>
+                  </a>
+                </ul>
+                <ul class="w-[20%] sumatera-listing text-sm">
+                  <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Sumatera Utara</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Medan</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Deli Serdang</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Binjai</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Pematang Siantar</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Langkat</li>
+                  </a>
+                </ul>
+                <ul class="w-[20%] diy-listing text-sm">
+                  <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Daerah Istimewa Yogyakarta</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Sleman</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Yogyakarta</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Bantul</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Kulon Progo</li>
+                  </a>
+                  <a href="#">
+                    <li>Rumah Dijual di Gunung Kidul</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <a href="#" class="megaLinks" data-menu="menu-2">
+          <span class="text-sm text-white font-medium">Disewa</span>
+        </a>
+        <div id="menu-2" class="megaMenu fixed hidden top-[70px] left-0 bg-white z-50 w-full h-[300px] shadow-lg overflow-hidden">
+          <div class="grid grid-cols-4 gap-4 p-4">
+            <div class="col-span-1 flex justify-center items-center">
+              <img src="/assets/images/nykka-alam-sutera.jpg" class="max-w-[300px] h-auto sticky top-0" alt="Mega Menu Image">
+            </div>
+            <div class="mega-list-dijual-container col-span-3 flex gap-8 justify-start flex-wrap overflow-y-auto max-h-[250px]">
+              <ul class="w-[20%] jakarta-listing text-sm ">
+                <a href="#">
+                  <li class="font-bold my-2 hover:text-blue-500">DKI Jakarta</li>
+                </a>
+                <a href="">
+                  <li>Disewa di Jakarta Pusat</li>
+                </a>
+                <a href="#">
+                  <li>Disewa di Jakarta Timur</li>
+                </a>
+                <a href="#">
+                  <li>Disewa di Jakarta Barat</li>
+                </a>
+                <a href="#">
+                  <li>Disewa di Jakarta Selatan</li>
+                </a>
+                <a href="#">
+                  <li>Disewa di Jakarta Utara</li>
+                </a>
+              </ul>
+              <ul class="w-[20%] jawa-barat-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Jawa Barat</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Bandung</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Bekasi</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Bogor</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Depok</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Cimahi</li>
+                </a>
+            </ul>
+            <ul class="w-[20%] banten-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Banten</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Tangerang</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Tangerang Selatan</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Serang</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Cilegon</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Lebak</li>
+                </a>
+            </ul>
+            <ul class="w-1/4 jawa-timur-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Jawa Timur</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Surabaya</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Malang</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Sidoarjo</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Gresik</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Kediri</li>
+                </a>
+            </ul>
+            <ul class="w-[20%] jateng-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Jawa Tengah</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Semarang</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Solo</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Sukuharjo</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Karanganyar</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Surakarta</li>
+                </a>
+            </ul>
+            <ul class="w-[20%] bali-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Bali</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Badung</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Kuta</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Denpasar</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Gianyar</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Buleleng</li>
+                </a>
+            </ul>
+            <ul class="w-[20%] sumatera-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Sumatera Utara</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Medan</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Deli Serdang</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Binjai</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Pematang Siantar</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Langkat</li>
+                </a>
+            </ul>
+            <ul class="w-[20%] diy-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Daerah Istimewa Yogyakarta</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Sleman</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Yogyakarta</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Bantul</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Kulon Progo</li>
+                </a>
+                <a href="#">
+                    <li>Disewa di Gunung Kidul</li>
+                </a>
+            </ul>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="megaLinks" data-menu="menu-3">
+          <span class="text-sm text-white font-medium">Properti Baru</span>
+        </a>
+        <div id="menu-3" class="megaMenu fixed hidden top-[70px] left-0 bg-white z-50 w-full h-[300px] shadow-lg overflow-hidden">
+          <div class="grid grid-cols-4 gap-4 p-4">
+            <div class="col-span-1 flex justify-center items-center">
+              <img src="/assets/images/nykka-alam-sutera.jpg" class="max-w-[300px] h-auto sticky top-0" alt="Mega Menu Image">
+            </div>
+            <div class="mega-list-dijual-container col-span-3 flex gap-8 justify-start flex-wrap overflow-y-auto max-h-[250px]">
+              <ul class="w-[20%] jakarta-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">DKI Jakarta</li>
+                </a>
+                <a href="#">
+                  <li>Properti Baru di Jakarta Pusat</li>
+                </a>
+                <a href="#">
+                  <li>Properti Baru di Jakarta Timur</li>
+                </a>
+                <a href="#">
+                  <li>Properti Baru di Jakarta Barat</li>
+                </a>
+                <a href="#">
+                  <li>Properti Baru di Jakarta Selatan</li>
+                </a>
+                <a href="#">
+                  <li>Properti Baru di Jakarta Utara</li>
+                </a>
+            </ul>
+              <ul class="w-[20%] jawa-barat-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Jawa Barat</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Bandung</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Bekasi</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Bogor</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Depok</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Cimahi</li>
+                </a>
+            </ul>
+            <ul class="w-[20%] banten-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Banten</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Tangerang</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Tangerang Selatan</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Serang</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Cilegon</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Lebak</li>
+                </a>
+            </ul>
+            <ul class="w-1/4 jawa-timur-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Jawa Timur</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Surabaya</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Malang</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Sidoarjo</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Gresik</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Kediri</li>
+                </a>
+            </ul>
+            <ul class="w-[20%] jateng-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Jawa Tengah</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Semarang</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Solo</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Sukuharjo</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Karanganyar</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Surakarta</li>
+                </a>
+            </ul>
+            <ul class="w-[20%] bali-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Bali</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Badung</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Kuta</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Denpasar</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Gianyar</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Buleleng</li>
+                </a>
+            </ul>
+            <ul class="w-[20%] sumatera-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Sumatera Utara</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Medan</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Deli Serdang</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Binjai</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Pematang Siantar</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Langkat</li>
+                </a>
+            </ul>
+            <ul class="w-[20%] diy-listing text-sm">
+                <a href="#">
+                    <li class="font-bold my-2 hover:text-blue-500">Daerah Istimewa Yogyakarta</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Sleman</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Yogyakarta</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Bantul</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Kulon Progo</li>
+                </a>
+                <a href="#">
+                    <li>Properti Baru di Gunung Kidul</li>
+                </a>
+            </ul>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="megaLinks" data-menu="menu-4">
+          <span class="text-sm text-white font-medium">KPR</span>
+        </a>
+        <a href="#" class="megaLinks" data-menu="menu-5">
+          <span class="text-sm text-white font-medium">Panduan</span>
+        </a>
+      </div>
+      <div class="flex justify-end items-center mx-auto flex-grow gap-5">
+        <button id="hamburgerBtn" class="block lg:hidden text-gray-300 hover:text-white focus:outline-none z-100">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12h18M3 6h18M3 18h18"></path>
+          </svg>
+        </button>
+        <button class="bg-white p-2 w-48 rounded-lg lg:block hidden">
+          <a href="#" class="text-blue-400 font-semibold">Iklankan Properti</a>
+        </button>
+        <div class="lg:block hidden relative" id="akunDropdown">
+          <span class="text-sm text-white font-medium cursor-pointer"><i class="fa fa-user-circle-o mr-4 text-lg"></i>Akun</span>
+          <div class="lg:hidden hidden absolute top-12 right-20 w-[350px] bg-white rounded-b-lg z-50" id="AkunMenu">
+            <div class="p-4">
+              <h3 class="px-4 font-semibold">Akun</h3>
+              <div class="flex flex-col justify-between">
+                <a href="/public/login-page.html" class="flex items-center px-1 py-2 text-sm text-blue-600">
+                  <i class="fa fa-user-circle-o text-3xl m-4"></i> 
+                  <span class="flex-1 text-lg">Login / Signup</span>
+                  <i class="fa fa-chevron-right ml-auto"></i>
+                </a>
+              <h3 class="px-4 py-2 font-semibold">Aktivitas</h3>  
+                <div class="grid grid-cols-2 gap-2 m-2">
+                  <a href="#" class="flex flex-col items-center px-4 py-2 text-sm border rounded-lg">
+                    <i class="fa fa-star text-sm mr-2 text-blue-600"></i>
+                    <span class="text-xs mt-1">Properti Favorit</span>
+                  </a>
+                  <a href="#" class="flex flex-col items-center px-4 py-2 text-sm  border  rounded-lg">
+                    <i class="fa fa-clock text-sm mr-2 text-blue-600"></i>
+                    <span class="text-xs mt-1">Terakhir Dikunjungi</span>
+                  </a>
+                  <a href="#" class="flex flex-col items-center px-4 py-2 text-sm  border  rounded-lg">
+                    <i class="fa fa-search text-sm mr-2 text-blue-600"></i>
+                    <span class="text-xs mt-1">Pencarian Terakhir</span>
+                  </a>
+                  <a href="#" class="flex flex-col items-center px-4 py-2 text-sm  border rounded-lg">
+                    <i class="fa fa-home text-sm mr-2 text-blue-600"></i>
+                    <span class="text-xs mt-1">Dashboard KPR</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-nav-container relative">
+      <div id="mobileMenu" class="lg:hidden hidden fixed bg-white z-50 w-full h-[100vh] overflow-y-auto">
+          <div class="p-4">
+            <h3 class="px-4 font-semibold">Akun</h3>
+            <div class="flex flex-col justify-between">
+              <a href="#" class="flex items-center px-1 py-2 text-sm text-blue-600">
+                <i class="fa fa-user-circle-o text-3xl m-4"></i> 
+                <span class="flex-1 text-lg">Login / Signup</span>
+                <i class="fa fa-chevron-right ml-auto"></i>
+              </a>
+            <h3 class="px-4 py-2 font-semibold">Aktivitas</h3>  
+            <div class="grid grid-cols-4 gap-2 m-4">
+              <a href="#" class="flex flex-col items-center justify-center px-4 py-2 text-sm border rounded-lg">
+                <i class="fa fa-star text-sm text-blue-600"></i>
+                <span class="text-xs mt-1 text-center">Properti Favorit</span>
+              </a>
+              <a href="#" class="flex flex-col items-center justify-center px-4 py-2 text-sm  border  rounded-lg">
+                <i class="fa fa-clock text-sm text-blue-600"></i>
+                <span class="text-xs mt-1 text-center">Terakhir Dikunjungi</span>
+              </a>
+              <a href="#" class="flex flex-col items-center justify-center px-4 py-2 text-sm  border  rounded-lg">
+                <i class="fa fa-search text-sm text-blue-600"></i>
+                <span class="text-xs mt-1 text-center">Pencarian Terakhir</span>
+              </a>
+              <a href="#" class="flex flex-col items-center justify-center px-4 py-2 text-sm  border rounded-lg">
+                <i class="fa fa-home text-sm text-blue-600"></i>
+                <span class="text-xs mt-1 text-center">Dashboard KPR</span>
+              </a>
+            </div>
+          </div>
+          <hr class="m-2">
+            <h3 class="px-4 font-semibold">Menu</h3>
+            <div class="p-4 flex flex-col gap-6">
+              <a href="#" class="flex items-center">
+                <i class="fa fa-home text-sm text-gray-400"></i>
+                <span class="ml-4 flex-1">Dijual</span>
+                <i class="fa fa-chevron-right text-sm text-gray-400 ml-auto"></i>
+              </a>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-home text-sm text-gray-400"></i>
+                <span class="ml-4 flex-1">Disewa</span>
+                <i class="fa fa-chevron-right text-sm text-gray-400 ml-auto"></i>
+              </a>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-home text-sm text-gray-400"></i>
+                <span class="ml-4 flex-1">Properti Baru</span>
+                <i class="fa fa-chevron-right text-sm text-gray-400 ml-auto"></i>
+              </a>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-home text-sm text-gray-400"></i>
+                <span class="ml-4 flex-1">KPR</span>
+                <i class="fa fa-chevron-right text-sm text-gray-400 ml-auto"></i>
+              </a>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-home text-sm text-gray-400"></i>
+                <span class="ml-4 flex-1">Panduan</span>
+                <i class="fa fa-chevron-right text-sm text-gray-400 ml-auto"></i>
+              </a>
+            </div>
+            <hr class="m-2">
+            <h3 class="px-4 font-semibold">Lainnya</h3>
+            <div class="p-4 flex flex-col gap-6">
+              <a href="#" class="flex items-center">
+                <i class="fa fa-home text-sm text-gray-400"></i>
+                <span class="ml-4 flex-1">Cari Agen</span>
+              </a>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-home text-sm text-gray-400"></i>
+                <span class="ml-4 flex-1">Explore</span>
+              </a>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-home text-sm text-gray-400"></i>
+                <span class="ml-4 flex-1">Berita</span>
+              </a>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-home text-sm text-gray-400"></i>
+                <span class="ml-4 flex-1">Perusahaan</span>
+                <i class="fa fa-chevron-right text-sm text-gray-400 ml-auto"></i>
+              </a>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-home text-sm text-gray-400"></i>
+                <span class="ml-4 flex-1">Beri Saran</span>
+              </a>
+              <a href="#" class="flex items-center mb-24">
+                <i class="fa fa-home text-sm text-gray-400"></i>
+                <span class="ml-4 flex-1">Download Aplikasi</span>
+              </a>
+            </div>
+            <button class="bg-blue-600 p-2 w-[90%] rounded-lg fixed bottom-[4px]">
+              <a href="#" class="text-white font-semibold">Iklankan Properti</a>
+            </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- login section -->
+  <div class="login-container">
+    <div class="login-container flex justify-center items-center h-screen">
+      <form action="" class="flex flex-col p-6 bg-white border-2 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-semibold mb-4">Welcome to JualRumah.id!</h3>
+        <label for="email" class="mb-2">
+          <span class="text-sm">Your email:</span>
+        </label>
+        <input type="email" id="email" placeholder="email" name="email" class="border-2 rounded-md border-black p-2 mb-4">
+        <label for="password" class="mb-2">
+          <span class="text-sm">Your Password:</span>
+        </label>
+        <input type="password" id="password" placeholder="password" name="password" class="border-2 rounded-md border-black p-2 mb-4">
+        <div class="checkbox mb-4">
+          <input type="checkbox" name="checkbox" id="remember-user">
+          <label for="remember-user" class="text-sm">Remember Me</label>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white border-2 rounded-md p-2">Sign in</button>
+        <p class="text-sm mt-2">Forgot your password? <a href="#" class="text-blue-500 hover:underline">Click Here</a></p>
+        <p class="text-sm mt-2">Not registered yet? <a href="#" class="text-blue-500 hover:underline">Create one</a></p>
+      </form>
+    </div>
+  </div>
+
+<!-- footer section -->
+<div class="footer container-fluid bg-gray-800 mt-10 w-full">
+  <footer class="footer-heading sm:mx-16 pt-4">
+    <hr class="border-t-1 border-white mt-5">
+    <div class="footer-top flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3 py-5">
+      <a href="#" class="font-mono text-white font-bold text-2xl mr-6">JualRumah.id</a>
+      <div class="flex gap-4">
+        <i class="fa fa-facebook-square lg:text-2xl sm:text-xl text-white mr-2"></i>
+        <i class="fa fa-instagram lg:text-2xl sm:text-xl text-white mr-2"></i>
+        <i class="fa fa-twitter lg:text-2xl sm:text-xl text-white mr-2"></i>
+        <i class="fa fa-youtube lg:text-2xl sm:text-xl text-white mr-2"></i>
+        <i class="fa fa-linkedin lg:text-2xl sm:text-xl text-white mr-2"></i>
+      </div>
+    </div>
+    <div class="footer-top-desc flex flex-col gap-4 lg:flex-row justify-between py-5">
+      <div class="flex flex-col lg:flex-row items-start">
+        <p class="text-sm text-white max-w-md overflow-hidden mb-4 lg:mb-0">JualRumah.id adalah situs teknologi jual beli properti terdepan di Indonesia yang telah melayani jutaan orang sejak 2007, dan kini hadir untuk membuat “Jual Beli Properti Lebih Mudah” dengan dukungan developer serta agen profesional.</p>
+      </div>
+      <ul class="text-white space-y-2">
+        <li class="font-bold">Perusahaan</li>
+        <li class="text-xs"><a href="#" class="block">Tentang Kami</a></li>
+        <li class="text-xs"><a href="#" class="block">Karir</a></li>
+        <li class="text-xs"><a href="#" class="block">Kontak Kami</a></li>
+        <li class="text-xs"><a href="#" class="block">Pressroom</a></li>
+      </ul>
+      <ul class="text-white space-y-2">
+        <li class="font-bold">Dukungan</li>
+        <li class="text-xs"><a href="#" class="block">Iklankan Properti Anda</a></li>
+        <li class="text-xs"><a href="#" class="block">Kebijakan Privasi</a></li>
+        <li class="text-xs"><a href="#" class="block">Syarat Penggunaan</a></li>
+        <li class="text-xs"><a href="#" class="block">Syarat Penggunaan Agen</a></li>
+      </ul>
+      <ul class="text-white space-y-2">
+        <li class="font-bold">Hubungi Kami</li>
+        <li>
+            <i class="fa fa-envelope-o"></i>
+            <a href="#" class="ml-2 text-xs">info@jualrumah.com</a>
+        </li>
+        <li>
+            <i class="fa fa-phone"></i>
+            <a href="#" class="ml-2 text-xs">+62 21235045</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mt-auto">
+      <p class="text-white text-sm mb-2">Download Aplikasi JualRumah.id</p>
+      <div class="download-icons flex py-2 gap-4">
+        <a href="#"><img src="src/images/apps-download-android.png" alt="" class="w-24 h-auto max-w-full filter brightness-0 invert"></a>
+        <a href="#"><img src="src/images/apps-download-ios.png" alt="" class="w-24 h-auto max-w-full filter brightness-0 invert"></a>
+      </div>
+    </div>
+    <hr class="border-t-1 border-white py-7 mt-5">
+  </footer>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="src/js/index.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
+</html>
